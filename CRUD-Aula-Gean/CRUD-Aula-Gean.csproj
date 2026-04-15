@@ -52,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigBanco.cs" />
+    <Compile Include="funcionariosform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funcionariosform.Designer.cs">
+      <DependentUpon>funcionariosform.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
