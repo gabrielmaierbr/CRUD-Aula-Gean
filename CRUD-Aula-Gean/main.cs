@@ -15,15 +15,33 @@ namespace CRUD_Aula_Gean
 {
     public partial class main : Form
     {
-        string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TDE_Gean.db");
-        SQLiteConnection conexaoBanco;
 
         ConfigBanco configurar = new ConfigBanco();
+        SQLiteConnection conexao = new SQLiteConnection();
+        
 
         public main()
         {
             InitializeComponent();
+            conexao = configurar.ConectarBanco(conexao);
             configurar.VerificarExistenciaBanco();
+            configurar.AplicarComandoCriarTabela(configurar.CriarTabelaFuncionarios(), conexao);
+            configurar.AplicarComandoCriarTabela(configurar.CriarTabelaFrentistas(), conexao);
+            configurar.AplicarComandoCriarTabela(configurar.CriarTabelaCombustivel(), conexao);
+            configurar.AplicarComandoCriarTabela(configurar.CriarTabelaReservatorios(), conexao);
+            configurar.AplicarComandoCriarTabela(configurar.CriarTabelaBombas(), conexao);
+            configurar.AplicarComandoCriarTabela(configurar.CriarTabelaAbastecimentos(), conexao);
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFuncionarios_Click(object sender, EventArgs e)
+        {
+            funcionariosform funcionariosForm = new funcionariosform();
+            funcionariosForm.ShowDialog();
         }
     }
 }

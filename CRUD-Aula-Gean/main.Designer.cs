@@ -39,6 +39,7 @@
             this.btnFuncionarios.TabIndex = 0;
             this.btnFuncionarios.Text = "Funcionários";
             this.btnFuncionarios.UseVisualStyleBackColor = true;
+            this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click);
             // 
             // main
             // 
@@ -51,6 +52,7 @@
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TDE Gean - CRUD - Posto de Gasolina";
+            this.Load += new System.EventHandler(this.main_Load);
             this.ResumeLayout(false);
 
         }
