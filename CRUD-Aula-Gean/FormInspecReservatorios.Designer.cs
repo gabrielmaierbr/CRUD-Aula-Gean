@@ -1,6 +1,6 @@
 ﻿namespace CRUD_Aula_Gean
 {
-    partial class FormCadastroFrentista
+    partial class FormInspecReservatorios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,53 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbFuncionarios = new System.Windows.Forms.ComboBox();
+            this.cmbCombustivel = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // cmbFuncionarios
+            // cmbCombustivel
             // 
-            this.cmbFuncionarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFuncionarios.FormattingEnabled = true;
-            this.cmbFuncionarios.Location = new System.Drawing.Point(47, 38);
-            this.cmbFuncionarios.Name = "cmbFuncionarios";
-            this.cmbFuncionarios.Size = new System.Drawing.Size(265, 21);
-            this.cmbFuncionarios.TabIndex = 0;
+            this.cmbCombustivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCombustivel.FormattingEnabled = true;
+            this.cmbCombustivel.Location = new System.Drawing.Point(97, 63);
+            this.cmbCombustivel.Name = "cmbCombustivel";
+            this.cmbCombustivel.Size = new System.Drawing.Size(225, 21);
+            this.cmbCombustivel.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 22);
+            this.label1.Location = new System.Drawing.Point(94, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Lista de Funcionários";
+            this.label1.Text = "Tipo de Combustível";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(223, 109);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(99, 35);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(214, 75);
+            this.btnSalvar.Location = new System.Drawing.Point(97, 109);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(99, 35);
-            this.btnSalvar.TabIndex = 2;
-            this.btnSalvar.Text = "Tornar Frentista";
+            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // FormCadastroFrentista
+            // FormInspecReservatorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 132);
+            this.ClientSize = new System.Drawing.Size(416, 191);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbFuncionarios);
+            this.Controls.Add(this.cmbCombustivel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "FormCadastroFrentista";
+            this.Name = "FormInspecReservatorios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tornar o funcionário um Frentista";
-            this.Load += new System.EventHandler(this.FormCadastroFrentista_Load);
+            this.Text = "Inspecionar Reservatórios";
+            this.Load += new System.EventHandler(this.FormInspecReservatorios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,8 +94,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cmbFuncionarios;
+        private System.Windows.Forms.ComboBox cmbCombustivel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;
     }
 }

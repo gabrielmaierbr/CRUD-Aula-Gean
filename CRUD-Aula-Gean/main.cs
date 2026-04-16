@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SQLite;
-using System.IO;
 using System.Windows.Forms;
-using System.Diagnostics;
 
 namespace CRUD_Aula_Gean
 {
@@ -52,10 +43,34 @@ namespace CRUD_Aula_Gean
                 "Mattia Poletto", "Grupo do Trabalho", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnFrentistas_Click(object sender, EventArgs e)
         {
             MenuFrentistas frentistasForm = new MenuFrentistas();
             frentistasForm.ShowDialog();
+        }
+
+        private void btnCombustiveis_Click(object sender, EventArgs e)
+        {
+            MenuCombustivel combustiveisForm = new MenuCombustivel();
+            combustiveisForm.ShowDialog();
+        }
+
+        private void btnReservatorios_Click(object sender, EventArgs e)
+        {
+            MenuReservatorios reservatoriosForm = new MenuReservatorios();
+            reservatoriosForm.ShowDialog();
+        }
+
+        private void btnBombas_Click(object sender, EventArgs e)
+        {
+            MenuBombas bombasForm = new MenuBombas();
+            bombasForm.ShowDialog();
+        }
+
+        private void btnAbastecimentos_Click(object sender, EventArgs e)
+        {
+            MenuAbastecimentos abastecimentosForm = new MenuAbastecimentos();
+            abastecimentosForm.ShowDialog();
         }
     }
 }

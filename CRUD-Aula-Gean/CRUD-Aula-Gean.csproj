@@ -53,7 +53,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abastecimentos.cs" />
+    <Compile Include="abastecimentosform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abastecimentosform.Designer.cs">
+      <DependentUpon>abastecimentosform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bombasform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bombasform.Designer.cs">
+      <DependentUpon>bombasform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Combustiveis.cs" />
+    <Compile Include="combustiveisform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="combustiveisform.Designer.cs">
+      <DependentUpon>combustiveisform.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigBanco.cs" />
+    <Compile Include="FormCadastroCombustivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroCombustivel.Designer.cs">
+      <DependentUpon>FormCadastroCombustivel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCadastroFrentista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +91,24 @@
     </Compile>
     <Compile Include="FormCadastroFuncionario.Designer.cs">
       <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInspecReservatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInspecReservatorios.Designer.cs">
+      <DependentUpon>FormInspecReservatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegisBombas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisBombas.Designer.cs">
+      <DependentUpon>FormRegisBombas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroAbastecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroAbastecimento.Designer.cs">
+      <DependentUpon>FormRegistroAbastecimento.cs</DependentUpon>
     </Compile>
     <Compile Include="frentistasform.cs">
       <SubType>Form</SubType>
@@ -85,6 +129,24 @@
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuAbastecimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAbastecimentos.Designer.cs">
+      <DependentUpon>MenuAbastecimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBombas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuBombas.Designer.cs">
+      <DependentUpon>MenuBombas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCombustivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCombustivel.Designer.cs">
+      <DependentUpon>MenuCombustivel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuFrentistas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,13 +159,46 @@
     <Compile Include="MenuFuncionarios.Designer.cs">
       <DependentUpon>MenuFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuReservatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReservatorios.Designer.cs">
+      <DependentUpon>MenuReservatorios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reservatoriosform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservatoriosform.Designer.cs">
+      <DependentUpon>reservatoriosform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="abastecimentosform.resx">
+      <DependentUpon>abastecimentosform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bombasform.resx">
+      <DependentUpon>bombasform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combustiveisform.resx">
+      <DependentUpon>combustiveisform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroCombustivel.resx">
+      <DependentUpon>FormCadastroCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroFrentista.resx">
       <DependentUpon>FormCadastroFrentista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroFuncionario.resx">
       <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInspecReservatorios.resx">
+      <DependentUpon>FormInspecReservatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisBombas.resx">
+      <DependentUpon>FormRegisBombas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroAbastecimento.resx">
+      <DependentUpon>FormRegistroAbastecimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frentistasform.resx">
       <DependentUpon>frentistasform.cs</DependentUpon>
@@ -114,11 +209,23 @@
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuAbastecimentos.resx">
+      <DependentUpon>MenuAbastecimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuBombas.resx">
+      <DependentUpon>MenuBombas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCombustivel.resx">
+      <DependentUpon>MenuCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuFrentistas.resx">
       <DependentUpon>MenuFrentistas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuFuncionarios.resx">
       <DependentUpon>MenuFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReservatorios.resx">
+      <DependentUpon>MenuReservatorios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +236,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="reservatoriosform.resx">
+      <DependentUpon>reservatoriosform.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

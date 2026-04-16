@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnFuncionarios = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnFrentistas = new System.Windows.Forms.Button();
+            this.btnCombustiveis = new System.Windows.Forms.Button();
+            this.btnReservatorios = new System.Windows.Forms.Button();
+            this.btnBombas = new System.Windows.Forms.Button();
+            this.btnAbastecimentos = new System.Windows.Forms.Button();
             this.btnGrupo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -47,51 +47,55 @@
             this.btnFuncionarios.UseVisualStyleBackColor = true;
             this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click);
             // 
-            // button1
+            // btnFrentistas
             // 
-            this.button1.Location = new System.Drawing.Point(204, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 56);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Frentistas";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnFrentistas.Location = new System.Drawing.Point(204, 37);
+            this.btnFrentistas.Name = "btnFrentistas";
+            this.btnFrentistas.Size = new System.Drawing.Size(139, 56);
+            this.btnFrentistas.TabIndex = 1;
+            this.btnFrentistas.Text = "Frentistas";
+            this.btnFrentistas.UseVisualStyleBackColor = true;
+            this.btnFrentistas.Click += new System.EventHandler(this.btnFrentistas_Click);
             // 
-            // button2
+            // btnCombustiveis
             // 
-            this.button2.Location = new System.Drawing.Point(59, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 56);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Combustíveis";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCombustiveis.Location = new System.Drawing.Point(59, 99);
+            this.btnCombustiveis.Name = "btnCombustiveis";
+            this.btnCombustiveis.Size = new System.Drawing.Size(139, 56);
+            this.btnCombustiveis.TabIndex = 2;
+            this.btnCombustiveis.Text = "Combustíveis";
+            this.btnCombustiveis.UseVisualStyleBackColor = true;
+            this.btnCombustiveis.Click += new System.EventHandler(this.btnCombustiveis_Click);
             // 
-            // button3
+            // btnReservatorios
             // 
-            this.button3.Location = new System.Drawing.Point(204, 99);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 56);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Reservatórios";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnReservatorios.Location = new System.Drawing.Point(204, 99);
+            this.btnReservatorios.Name = "btnReservatorios";
+            this.btnReservatorios.Size = new System.Drawing.Size(139, 56);
+            this.btnReservatorios.TabIndex = 3;
+            this.btnReservatorios.Text = "Reservatórios";
+            this.btnReservatorios.UseVisualStyleBackColor = true;
+            this.btnReservatorios.Click += new System.EventHandler(this.btnReservatorios_Click);
             // 
-            // button4
+            // btnBombas
             // 
-            this.button4.Location = new System.Drawing.Point(59, 161);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 56);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Bombas";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBombas.Location = new System.Drawing.Point(59, 161);
+            this.btnBombas.Name = "btnBombas";
+            this.btnBombas.Size = new System.Drawing.Size(139, 56);
+            this.btnBombas.TabIndex = 4;
+            this.btnBombas.Text = "Bombas";
+            this.btnBombas.UseVisualStyleBackColor = true;
+            this.btnBombas.Click += new System.EventHandler(this.btnBombas_Click);
             // 
-            // button5
+            // btnAbastecimentos
             // 
-            this.button5.Location = new System.Drawing.Point(204, 161);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 56);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Abastecimentos";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAbastecimentos.Location = new System.Drawing.Point(204, 161);
+            this.btnAbastecimentos.Name = "btnAbastecimentos";
+            this.btnAbastecimentos.Size = new System.Drawing.Size(139, 56);
+            this.btnAbastecimentos.TabIndex = 5;
+            this.btnAbastecimentos.Text = "Abastecimentos";
+            this.btnAbastecimentos.UseVisualStyleBackColor = true;
+            this.btnAbastecimentos.Click += new System.EventHandler(this.btnAbastecimentos_Click);
             // 
             // btnGrupo
             // 
@@ -109,11 +113,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 290);
             this.Controls.Add(this.btnGrupo);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAbastecimentos);
+            this.Controls.Add(this.btnBombas);
+            this.Controls.Add(this.btnReservatorios);
+            this.Controls.Add(this.btnCombustiveis);
+            this.Controls.Add(this.btnFrentistas);
             this.Controls.Add(this.btnFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -128,11 +132,11 @@
         #endregion
 
         private System.Windows.Forms.Button btnFuncionarios;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnFrentistas;
+        private System.Windows.Forms.Button btnCombustiveis;
+        private System.Windows.Forms.Button btnReservatorios;
+        private System.Windows.Forms.Button btnBombas;
+        private System.Windows.Forms.Button btnAbastecimentos;
         private System.Windows.Forms.Button btnGrupo;
     }
 }
