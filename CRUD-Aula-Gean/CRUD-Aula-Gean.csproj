@@ -35,7 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
@@ -52,6 +54,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigBanco.cs" />
+    <Compile Include="FormCadastroFrentista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroFrentista.Designer.cs">
+      <DependentUpon>FormCadastroFrentista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroFuncionario.Designer.cs">
+      <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frentistasform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frentistasform.Designer.cs">
+      <DependentUpon>frentistasform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios.cs" />
     <Compile Include="funcionariosform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,10 +85,40 @@
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuFrentistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFrentistas.Designer.cs">
+      <DependentUpon>MenuFrentistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFuncionarios.Designer.cs">
+      <DependentUpon>MenuFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCadastroFrentista.resx">
+      <DependentUpon>FormCadastroFrentista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroFuncionario.resx">
+      <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frentistasform.resx">
+      <DependentUpon>frentistasform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="funcionariosform.resx">
+      <DependentUpon>funcionariosform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFrentistas.resx">
+      <DependentUpon>MenuFrentistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFuncionarios.resx">
+      <DependentUpon>MenuFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

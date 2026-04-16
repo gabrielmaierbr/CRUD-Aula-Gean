@@ -35,13 +35,27 @@ namespace CRUD_Aula_Gean
 
         private void main_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnFuncionarios_Click(object sender, EventArgs e)
         {
-            funcionariosform funcionariosForm = new funcionariosform();
+            MenuFuncionarios funcionariosForm = new MenuFuncionarios();
             funcionariosForm.ShowDialog();
+        }
+
+        private void btnGrupo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Matheus Marques\n" + 
+                "Kaique Mendes\n" +
+                "Gabriel Maier\n" +
+                "Mattia Poletto", "Grupo do Trabalho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MenuFrentistas frentistasForm = new MenuFrentistas();
+            frentistasForm.ShowDialog();
         }
     }
 }
