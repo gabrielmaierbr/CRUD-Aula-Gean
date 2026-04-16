@@ -55,6 +55,7 @@
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 0;
             this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // dtpData
             // 
