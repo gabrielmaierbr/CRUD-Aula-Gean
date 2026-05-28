@@ -37,7 +37,7 @@ namespace CRUD_Aula_Gean
             dt.Rows.Add(2, "Abastecimentos de Hoje");
             dt.Rows.Add(3, "Filtrar por Combustível: Gasolina");
             dt.Rows.Add(4, "Filtrar por Combustível: Diesel");
-            dt.Rows.Add(5, "Abastecimentos na Bomba nº 1");
+            dt.Rows.Add(5, "Filtrar por Combustível: Álcool");
             dt.Rows.Add(6, "Valores entre R$ 50,00 e R$ 150,00");
             dt.Rows.Add(7, "Faturamento Total por Frentista");
             dt.Rows.Add(8, "Total Retirado por Reservatório");
@@ -84,7 +84,7 @@ namespace CRUD_Aula_Gean
                         dgvAbastecimentos.DataSource = repoRelatorios.FiltrarPorTipoCombustivel("Diesel");
                         break;
                     case 5:
-                        dgvAbastecimentos.DataSource = repoRelatorios.FiltrarPorBomba(1);
+                        dgvAbastecimentos.DataSource = repoRelatorios.FiltrarPorTipoCombustivel("Alcool");
                         break;
                     case 6:
                         dgvAbastecimentos.DataSource = repoRelatorios.FiltrarPorIntervaloDeValores(50.00, 150.00);
