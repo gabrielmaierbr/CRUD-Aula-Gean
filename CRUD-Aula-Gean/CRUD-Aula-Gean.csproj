@@ -60,6 +60,7 @@
     <Compile Include="abastecimentosform.Designer.cs">
       <DependentUpon>abastecimentosform.cs</DependentUpon>
     </Compile>
+    <Compile Include="AbastecimentosRelatorios.cs" />
     <Compile Include="bombasform.cs">
       <SubType>Form</SubType>
     </Compile>
