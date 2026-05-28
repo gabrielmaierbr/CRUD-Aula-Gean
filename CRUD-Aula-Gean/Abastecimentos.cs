@@ -38,19 +38,19 @@ namespace CRUD_Aula_Gean
             using (var conexao = config.ConectarBanco(null))
             {
                 string sql = @"
-            SELECT 
-                a.abastecimento_id AS [ID],
-                a.abastecimento_data AS [Data],
-                func.funcionario_nome AS [Frentista],
-                b.bomba_tipo_combustivel AS [Combustível],
-                b.bomba_id AS [Nº Bomba],
-                r.reservatorio_id AS [Nº Reservatório],
-                'R$ ' || PRINTF('%.2f', a.abastecimento_valor) AS [Valor]
-            FROM abastecimentos a
-            INNER JOIN frentistas f ON a.abastecimento_fk_frentista = f.frentista_id
-            INNER JOIN funcionarios func ON f.frentista_fk_funcionario = func.funcionario_id
-            INNER JOIN bombas b ON a.abastecimento_fk_bomba = b.bomba_id
-            INNER JOIN reservatorio r ON b.bomba_fk_reservatorio = r.reservatorio_id";
+                SELECT 
+                    a.abastecimento_id AS [ID],
+                    a.abastecimento_data AS [Data],
+                    func.funcionario_nome AS [Frentista],
+                    b.bomba_tipo_combustivel AS [Combustível],
+                    b.bomba_id AS [Nº Bomba],
+                    r.reservatorio_id AS [Nº Reservatório],
+                    'R$ ' || PRINTF('%.2f', a.abastecimento_valor) AS [Valor]
+                FROM abastecimentos a
+                INNER JOIN frentistas f ON a.abastecimento_fk_frentista = f.frentista_id
+                INNER JOIN funcionarios func ON f.frentista_fk_funcionario = func.funcionario_id
+                INNER JOIN bombas b ON a.abastecimento_fk_bomba = b.bomba_id
+                INNER JOIN reservatorio r ON b.bomba_fk_reservatorio = r.reservatorio_id";
 
                 System.Data.SQLite.SQLiteDataAdapter da = new System.Data.SQLite.SQLiteDataAdapter(sql, conexao);
                 da.Fill(dt);

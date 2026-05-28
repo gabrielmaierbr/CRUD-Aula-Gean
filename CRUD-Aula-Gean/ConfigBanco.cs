@@ -79,7 +79,7 @@ namespace CRUD_Aula_Gean
                 "bomba_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "bomba_tipo_combustivel VARCHAR(30)," +
                 "bomba_fk_reservatorio INTEGER," +
-                "FOREIGN KEY (bomba_fk_reservatorio) REFERENCES reservatorios(reservatorio_id)" +
+                "FOREIGN KEY (bomba_fk_reservatorio) REFERENCES reservatorio(reservatorio_id)" +
                 ");"
                 ;
             return sql;

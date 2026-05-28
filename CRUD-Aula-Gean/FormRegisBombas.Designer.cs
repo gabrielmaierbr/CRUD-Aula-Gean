@@ -85,7 +85,7 @@
             this.MaximizeBox = false;
             this.Name = "FormRegisBombas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormRegisBombas";
+            this.Text = "Registro de Bombas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
